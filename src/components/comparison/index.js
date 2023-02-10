@@ -6,15 +6,8 @@ import SelectedItem from "../selectedItem";
 import Button from "../button";
 
 const Comparison = ({ selected, resetSelectedMovies }) => {
-  const [similaritiesList, setSimilaritiesList] = useState({});
   const [isSimilar, setIsSimilar] = useState(false);
-
-  useEffect(() => {
-    if (selected.length === 2) {
-      //save the list of similarites in the state
-      setSimilaritiesList(useFinalSimilarMovies(selected));
-    }
-  }, [selected]);
+  const similaritiesList = useFinalSimilarMovies(selected);
 
   useEffect(() => {
     //when the list of similarities change, save the status to return Yes or No
