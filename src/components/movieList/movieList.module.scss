@@ -1,0 +1,20 @@
+.listMovie {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .listMovie {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .listMovie {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.9rem;
+  }
+}

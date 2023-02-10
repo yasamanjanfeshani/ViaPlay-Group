@@ -1,0 +1,16 @@
+@import "@/styles/colors.scss";
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  .border {
+    border: 3px solid $color-green-1;
+  }
+  .image {
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19);
+  }
+}

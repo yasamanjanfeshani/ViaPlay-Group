@@ -1,0 +1,18 @@
+@import "@/styles/colors.scss";
+
+.button {
+  width: 10rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: $color-gray-1;
+  border: 0;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: $color-green-1;
+  color: $color-white;
+  &:hover {
+    background: rgba(0, 128, 0, 0.8);
+  }
+}
