@@ -11,7 +11,7 @@ const MovieItem = ({ data, callBackMovieDetail, selected }) => {
     } else {
       setSelectedStatus(false);
     }
-  }, [selected]);
+  }, [selected, data]);
 
   return (
     <div className={styles.card} onClick={() => callBackMovieDetail(data)}>

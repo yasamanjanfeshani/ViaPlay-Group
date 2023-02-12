@@ -11,10 +11,6 @@ const Comparison = ({ selected, resetSelectedMovies }) => {
 
   useEffect(() => {
     //when the list of similarities change, save the status to return Yes or No
-    similaritiesStatus();
-  }, [similaritiesList]);
-
-  const similaritiesStatus = () => {
     //base on document the necessary key that must be exist is, "year" and "parentalRating" and the length more than 2
     if (
       similaritiesList &&
@@ -26,7 +22,7 @@ const Comparison = ({ selected, resetSelectedMovies }) => {
     } else {
       setIsSimilar(false);
     }
-  };
+  }, [similaritiesList]);
 
   return (
     <div className={styles.comparison} data-testid="comparison-component">
